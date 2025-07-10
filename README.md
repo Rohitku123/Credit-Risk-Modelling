@@ -7,9 +7,14 @@ Loss Given Default (LGD)
 
 Exposure at Default (EAD)
 
+
+
 The models are developed using Python, based on real-world-inspired datasets (e.g., Lending Club) and follow a practical industry-standard methodology, useful for credit analysts, data scientists, and risk modelers.
 
+
  Project Objectives
+
+
 Understand and model the credit risk of individual loans
 
 Estimate the likelihood of default (PD), expected losses (LGD), and outstanding exposure (EAD)
@@ -20,11 +25,16 @@ Weight of Evidence (WoE) & Information Value (IV)
 
 Logistic and Linear Regression modeling
 
+
+
 Feature binning & risk grouping
 
 Model evaluation (AUC, Gini, KS, RMSE, R²)
 
 Regulatory-compliant model structure
+
+
+
 
  Project Structure
 Section	Description
@@ -34,10 +44,16 @@ LGD Modeling	Regression on recovery rate, linear regression, log transformations
 EAD Modeling	Usage given default modeling using linear regression
 Model Validation	KS-statistic, AUC, ROC curves, residual analysis
 
+
+
 Technologies Used
 Python: Data preprocessing, modeling, and evaluation
 
+
+
 Libraries: pandas, numpy, matplotlib, seaborn, sklearn, statsmodels
+
+
 
  Key Techniques
 Weight of Evidence (WoE) Transformation: Converts categorical variables for PD modeling
@@ -48,6 +64,9 @@ Binning Techniques: Fine and coarse classing for continuous variables
 
 Model Evaluation: ROC, AUC, KS, adjusted R², RMSE
 
+
+
+
  Insights Gained
 PD model helps estimate the probability of default using borrower attributes.
 
@@ -57,6 +76,9 @@ EAD model helps predict the exposure amount at the point of default.
 
 Combining these three gives the Expected Loss (EL):
 EL = PD × LGD × EAD
+
+
+
 
  How to Use
 Clone this repo:
